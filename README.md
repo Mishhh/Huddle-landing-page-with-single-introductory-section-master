@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://mishhh.github.io/Huddle-landing-page-with-single-introductory-section-master/)
-- Live Site URL: [Add live site URL here](https://mishhh.github.io/Huddle-landing-page-with-single-introductory-section-master/)
+- Solution URL: [Solution URL](https://mishhh.github.io/Huddle-landing-page-with-single-introductory-section-master/)
+- Live Site URL: [Live site URL](https://mishhh.github.io/Huddle-landing-page-with-single-introductory-section-master/)
 
 ## My process
 

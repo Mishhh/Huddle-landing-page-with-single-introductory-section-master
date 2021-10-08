@@ -1,0 +1,245 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-white: #fff;
+  --color-soft-magenta: hsl(300, 100%, 71%);
+  --color-violet: hsl(257, 40%, 49%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+html {
+  background-color: var(--color-violet);
+}
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.huddle-landing-page-logo {
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 15%;
+}
+.huddle-introduction {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0px;
+  width: 95%;
+}
+
+.huddle-introduction-illustration {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 5%;
+  max-width: 100%;
+}
+
+.huddle-introduction-content {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+  justify-content:left;
+  margin: 0px 55px;
+  color: var(--color-white);
+}
+
+.introduction-title {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  width: 30rem;
+  margin-top: 15%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.introduction-description {
+  display: block;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.register-btn {
+  display:block;
+  text-align: center;
+  width: 200px;
+  margin-top: 25px;
+  background-color: var(--color-white);
+  color: var(--color-violet);
+  font-size: 1.1rem;
+  padding:10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0.5rem 0.5rem 0.8rem 0.2rem #3030306e;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.register-btn:hover {
+  background-color: var(--color-soft-magenta);
+  color: var(--color-white);
+}
+
+.social-media{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content:end;
+  
+}
+.social-media > a {
+  line-height: 0vh;
+  padding: 1.1rem;
+  margin-top: 0;
+  margin-right: 10px;
+  color: var(--color-white);
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+}
+
+.social-media > a:hover {
+  color: var(--color-soft-magenta);
+  border-color: var(--color-soft-magenta);
+}
+
+.attribution {
+  margin-top: 0px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.attribution a {
+  color: hsl(199, 100%, 54%);
+}
+
+
+
+/*Screensize Adjustments*/
+@media (max-width: 500px) {
+
+  .main{
+    min-height: 100%;
+  }
+
+  body {
+    max-height: 100%;
+  }
+  
+  .huddle-introduction  {
+
+    width:50% ;
+  }
+
+  .huddle-landing-page-logo {
+    width:25%;
+  }
+
+  .huddle-introduction-illustration {
+    width: 100%;
+  }
+
+  .huddle-introduction-content {
+    width: 100%;
+
+  }
+
+  .huddle-introduction-content > div {
+    margin-top: 0.8rem;
+  }
+
+
+  .introduction-title {
+    width:18rem;
+    font-size: 1rem;
+    font-weight: 400px;
+    margin-bottom: 0px;
+  }
+
+  .introduction-description {
+    font: 0.7rem;
+  }
+
+
+  .register-btn {
+    margin-top: 1rem;
+    padding: 3%;
+    font-size: 0.6rem;
+  }
+
+  .social-media {
+    justify-content: flex-end;
+    margin-top: 3rem;
+  }
+
+  .social-media a{
+    line-height: 0px;
+    padding: 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .attribution {
+    margin:1rem auto;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  main{
+    max-height: 100%;
+  }
+
+  body {
+    max-height: 100%;
+  }
+
+  .huddle-introduction {
+    margin-top: 2.5rem;
+    width: 63%;
+  }
+  
+  .huddle-introduction-illustration {
+    width:100%;
+
+  }
+
+  .huddle-introduction-content {
+    width:100%;
+  }
+
+  .introduction-title {
+    width:18rem;
+    font-size: 1.5rem;
+  }
+  
+  .introduction-description {
+    font-size: 0.9rem;
+  }
+
+  .register-btn{
+    font-size: 1.1rem;
+    padding: 3%;
+  }
+
+}

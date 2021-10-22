@@ -53,19 +53,24 @@ body {
 
 .huddle-introduction-content {
   display: flex;
-  width: 40rem;
+  max-width: 40rem;
   flex-direction: column;
   justify-content:left;
-  margin: 0px 55px;
+  margin: 0px 1rem;
   color: var(--color-white);
 }
 
-.introduction-title , h1{
+h1{
+  margin: 0;
+  padding: 0;
   display: block;
   font-size: 2.4rem;
   font-weight: 800;
+}
+
+.introduction-title {
   width: 30rem;
-  margin-top: 15%;
+  margin-top: 8%;
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
@@ -135,6 +140,8 @@ body {
 
 
 /*Screensize Adjustments*/
+
+
 @media (max-width: 500px) {
 
   .main{
@@ -156,6 +163,7 @@ body {
 
   .huddle-introduction-illustration {
     width: 100%;
+ 
   }
 
   .huddle-introduction-content {
@@ -168,15 +176,17 @@ body {
   }
 
 
-  .introduction-title {
+  .introduction-title, h1 {
     width:18rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400px;
     margin-bottom: 0px;
   }
 
   .introduction-description {
     font: 0.7rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
@@ -228,7 +238,7 @@ body {
     width:100%;
   }
 
-  .introduction-title {
+  .introduction-title, h1 {
     width:18rem;
     font-size: 1.5rem;
   }
@@ -240,6 +250,88 @@ body {
   .register-btn{
     font-size: 1.1rem;
     padding: 3%;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+
+  .main{
+    min-height: 100%;
+  }
+
+  body {
+    max-height: 100%;
+
+  }
+  
+  .huddle-introduction  {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 0;
+    width :100% ;
+  }
+
+  .huddle-landing-page-logo {
+    width:28%;
+  }
+
+  .huddle-introduction-illustration {
+    width: 100%;
+  }
+
+  .huddle-introduction-content {
+    width: 100%;
+
+  }
+
+  .huddle-introduction-content > div {
+    margin-top: 0.8rem;
+    text-align: center;
+  }
+
+
+  .introduction-title , h1{
+    width:15rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    font-weight: 300px;
+    margin-bottom: 0px;
+  }
+
+  .introduction-description {
+    font: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+
+  .register-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding: 3%;
+    font-size: 0.8rem;
+  }
+
+  .social-media {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .social-media a{
+    line-height: 0px;
+    padding: 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .attribution {
+    justify-content:center ;
+    margin-top:1rem ;
+    font-size: 0.6rem;
   }
 
 }
